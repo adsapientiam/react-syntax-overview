@@ -6,3 +6,8 @@
 .border{
     border: 10px inset blue
 }
+
+.input-field{
+    border:5px solid grey;
+    background-color: lightgray;
+}
