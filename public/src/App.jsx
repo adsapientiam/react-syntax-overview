@@ -21,7 +21,7 @@ class Input extends React.Component{
         console.log("Connected to DOM")
     }
 
-    handleChange(event){
+    change(event){
         this.props.onDegreeChange(event.target.value); 
         /* event = the event handler
          * target = the <input/>
@@ -36,7 +36,7 @@ class Input extends React.Component{
             <fieldset className="input-field">
                 <legend>Enter degrees in {this.props.scale}</legend>
                 <input value={this.props.degreeValue} 
-                        onChange={this.handleChange}/>
+                        onChange={e=>this.change(e)}/>
             </fieldset>
         )
     }
